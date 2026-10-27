@@ -1,0 +1,27 @@
+{
+  "name": "nextest",
+  "version": "1.0.0",
+  "description": "NEXTEST — Student Online Test Portal. Prepare. Attempt. Progress.",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "seed": "node server/src/seed/seed.js",
+    "start:server": "node server/src/server.js",
+    "start:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "test:unit": "node server/tests/backend.test.js",
+    "test:e2e": "node server/tests/e2e.test.js",
+    "test:flow": "node server/tests/db_flow.test.js",
+    "test": "node server/tests/backend.test.js && node server/tests/e2e.test.js && node server/tests/db_flow.test.js"
+  },
+  "keywords": [
+    "nextest",
+    "examination",
+    "assessment",
+    "mongodb",
+    "react",
+    "node"
+  ],
+  "author": "NEXTEST Team",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "nextest-server",
+  "version": "1.0.0",
+  "description": "Plain Node.js HTTP Backend for NEXTEST with official MongoDB driver",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/seed/seed.js",
+    "test": "node ../tests/backend.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.12.0"
+  }
+}
